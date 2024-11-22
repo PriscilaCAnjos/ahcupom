@@ -1,3 +1,147 @@
-{
-	"folders": []
-}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ah, Cupom! - Cupons de Desconto e Cashback</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* Estilos Gerais */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background-color: #6a1b9a;
+            color: white;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        nav {
+            display: flex;
+            gap: 20px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .banner {
+            text-align: center;
+            background-image: url('https://via.placeholder.com/1200x300');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 50px 20px;
+        }
+        .banner h2 {
+            font-size: 36px;
+            margin: 0 0 10px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .coupon-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+        .coupon-card {
+            border: 1px solid #ddd;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+        }
+        .coupon-card img {
+            max-width: 80px;
+            margin-bottom: 10px;
+        }
+        .coupon-card h3 {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+        .coupon-card p {
+            font-size: 14px;
+            color: #555;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 15px;
+            background-color: #6a1b9a;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        .btn:hover {
+            background-color: #53157a;
+        }
+        footer {
+            text-align: center;
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Ah, Cupom!</h1>
+        <nav>
+            <a href="/">Início</a>
+            <a href="/cupons">Cupons</a>
+            <a href="/lojas">Lojas</a>
+            <a href="/contato">Contato</a>
+        </nav>
+    </header>
+    <div class="banner">
+        <h2>Economize com Cupons e Cashback</h2>
+        <p>Descubra ofertas exclusivas em mais de 2.000 lojas no <strong>www.ahcupom.com.br</strong>!</p>
+        <a href="/cupons" class="btn">Ver Ofertas</a>
+    </div>
+    <div class="container">
+        <h2>Top Cupons</h2>
+        <div class="coupon-grid">
+            <div class="coupon-card">
+                <img src="https://via.placeholder.com/80" alt="Loja X">
+                <h3>10% OFF na Loja X</h3>
+                <p>Use o código <strong>LOJA10</strong></p>
+                <a href="/cupom/loja-x" class="btn">Aproveitar</a>
+            </div>
+            <div class="coupon-card">
+                <img src="https://via.placeholder.com/80" alt="Loja Y">
+                <h3>Frete Grátis na Loja Y</h3>
+                <p>Compras acima de R$100</p>
+                <a href="/cupom/loja-y" class="btn">Aproveitar</a>
+            </div>
+            <div class="coupon-card">
+                <img src="https://via.placeholder.com/80" alt="Loja Z">
+                <h3>20% OFF na Loja Z</h3>
+                <p>Promoção válida até 30/11</p>
+                <a href="/cupom/loja-z" class="btn">Aproveitar</a>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>© 2024 <strong>Ah, Cupom!</strong> Todos os direitos reservados. Visite: <a href="https://www.ahcupom.com.br" style="color: #6a1b9a;">www.ahcupom.com.br</a></p>
+    </footer>
+</body>
+</html>
